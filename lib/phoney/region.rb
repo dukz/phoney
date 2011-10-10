@@ -1,5 +1,5 @@
 require 'yaml'
-YAML::ENGINE.yamler = 'syck'
+YAML::ENGINE.yamler = 'syck' if YAML.const_defined?(:ENGINE)
 
 class PhoneNumber
   
